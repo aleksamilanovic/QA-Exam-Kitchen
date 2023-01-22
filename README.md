@@ -1,2 +1,1 @@
-# QA-Exam-Kitchen
-Automation tests
+Pokretanje testova:

@@ -1,4 +1,4 @@
-@organize
+@kitchen
 Feature: Test that organize page works properly
 
   Scenario: Organize page works as intended

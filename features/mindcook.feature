@@ -1,4 +1,4 @@
-@mindcook
+@kitchen
 Feature: Test that Mind Cook page works properly
 
   Scenario: Mind Cook page works as intended

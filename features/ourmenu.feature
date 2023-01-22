@@ -1,4 +1,4 @@
-@ourmenu
+@kitchen
 Feature: Test that Our Menu page works properly
 
   Scenario: Our menu page works as intended

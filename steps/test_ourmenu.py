@@ -18,6 +18,8 @@ def browser():
     driver.get("http://10.15.1.204:3000/menu")
     driver.maximize_window()
     driver.execute_script("window.scrollTo(0, 900);")
+    time.sleep(3)
+    driver.execute_script("window.scrollTo(0, 300);")
     driver.implicitly_wait(10)
     yield driver
     driver.quit()

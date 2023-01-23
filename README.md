@@ -1,6 +1,15 @@
-Tehnologije: Python, pytest, pytest BDD, Selenium Webdriver
-IDE: Pycharm Professional 
+# QA Kitchen Exam
+## Tehnologije: Python, pytest, pytest BDD, Selenium Webdriver
+## IDE: Pycharm Professional 
+## Testove je neophodno pokrenuti u Pycharm Professional verziji, jer pytest bdd framework nije podrzan u okviru Community verzije.
 
-Pokretanje testova: Testove je neophodno pokrenuti u Pycharm Professional verziji, jer pytest bdd framework nije podrzan u okviru Community verzije. Testove mozete pokrenuti tako sto cete u terminalu uneti pytest -k kitchen.
+
+### 1. Instaliranje dependencie-a:
+   #### `pip install -r requirements.txt`
+   
+   
+
+### 2. Pokretanje testova:
+   #### `pytest --reruns 3 -k kitchen --disable-warnings` 
 
 

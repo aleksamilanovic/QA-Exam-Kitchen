@@ -1,12 +1,8 @@
-from turtle import left, right
-
 import pytest
 from pytest_bdd import when, then, scenarios
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import random
 
 value = 0
@@ -37,9 +33,9 @@ def test_mindcook(browser):
     for i in range(1, 10):
         left_button = browser.find_element(By.XPATH, "(//div[@class='btn-group'])[{0}]/button[1]".format(i))
         right_button = browser.find_element(By.XPATH, "(//div[@class='btn-group'])[{0}]/button[2]".format(i))
-        random_button = random.choice([left, right])
+        random_button = random.choice(["left", "right"])
 
-        if random_button == left:
+        if random_button == "left":
             left_button.click()
             value += 1
         else:

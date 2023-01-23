@@ -38,7 +38,7 @@ def test_ourmenudata(browser):
         price_element = browser.find_element(By.XPATH, "//span[@id='ukupno']")
         price = price_element.text
         expected_price += price
-
+        browser.execute_script("window.scrollTo(0, 300);")
 
 @then("We get a valid price in ourmenu")
 def test_ourmenudata():
